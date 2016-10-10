@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "BadgeView.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,16 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+
+    BadgeView *badgeView = [[BadgeView alloc] initWithFrame:CGRectMake(100, 100, 0, 0)];
+
+    badgeView.badgeValue = @"111";
+    badgeView.textColor = [UIColor blackColor];
+    badgeView.textFont = [UIFont systemFontOfSize:14];
+    badgeView.bgColor = [UIColor redColor];
+    [badgeView sizeToFit];
+
+    [self.view addSubview:badgeView];
 }
 
 

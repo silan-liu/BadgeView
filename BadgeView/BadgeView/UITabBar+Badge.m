@@ -69,4 +69,34 @@
         }
     }
 }
+
+- (void)updateBadgeTextColor:(UIColor *)textColor atIndex:(NSInteger)index {
+    if (index >= 0 && index < self.items.count) {
+        BadgeView *badgeView = [self badgeViewAtIndex:index];
+
+        if (badgeView) {
+            badgeView.textColor = textColor;
+        }
+    }
+}
+
+- (void)updateBadgeBgColor:(UIColor *)bgColor atIndex:(NSInteger)index {
+    if (index >= 0 && index < self.items.count) {
+        BadgeView *badgeView = [self badgeViewAtIndex:index];
+
+        if (badgeView) {
+            badgeView.bgColor = bgColor;
+        }
+    }
+}
+
+- (void)updateBadgeTextFont:(UIFont *)textFont atIndex:(NSInteger)index {
+    if (index >= 0 && index < self.items.count) {
+        BadgeView *badgeView = [self badgeViewAtIndex:index];
+
+        if (badgeView) {
+            badgeView.textFont = textFont;
+        }
+    }
+}
 @end

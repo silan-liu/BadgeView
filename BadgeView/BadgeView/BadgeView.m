@@ -67,6 +67,13 @@
     [self setNeedsLayout];
 }
 
+- (void)setTextFont:(UIFont *)textFont {
+    _textFont = textFont;
+
+    _label.font = textFont;
+    [self setNeedsLayout];
+}
+
 - (void)sizeToFit {
     [super sizeToFit];
     

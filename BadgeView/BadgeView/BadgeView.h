@@ -14,5 +14,6 @@ IB_DESIGNABLE
 @property (nonatomic, strong) IBInspectable UIColor *bgColor;
 @property (nonatomic, strong) IBInspectable NSString *badgeValue;
 @property (nonatomic, strong) IBInspectable UIColor *textColor;
+@property (nonatomic, strong) IBInspectable UIFont *textFont;
 
 @end

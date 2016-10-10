@@ -20,8 +20,10 @@
     // Do any additional setup after loading the view.
     
     [self.tabBar updateBadge:@"120" bgColor:[UIColor purpleColor] atIndex:0];
+    [self.tabBar updateBadgeTextColor:[UIColor redColor] atIndex:0];
 
     [self.tabBar updateBadge:@"222" bgColor:[UIColor blueColor] atIndex:1];
+    [self.tabBar updateBadgeTextFont:[UIFont boldSystemFontOfSize:15] atIndex:1];
 }
 
 - (void)didReceiveMemoryWarning {
